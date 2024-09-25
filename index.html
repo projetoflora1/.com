@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flora Brasileira</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap">
+    <style>
+        body {
+            background-image: url("imagem/fundoo.jpg");
+            font-family: 'Google Sans', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2e8b57;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #4CAF50;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #3e8e41;
+        }
+
+        .dropdown,
+        .dropdown-states,
+        .dropdown-institutions {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn,
+        .dropdown-states .dropbtn-states,
+        .dropdown-institutions .dropbtn-institutions {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 20px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .dropdown-content,
+        .dropdown-states-content,
+        .dropdown-institutions-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a,
+        .dropdown-states-content a,
+        .dropdown-institutions-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover,
+        .dropdown-states-content a:hover,
+        .dropdown-institutions-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown.show .dropdown-content,
+        .dropdown-states.show .dropdown-states-content,
+        .dropdown-institutions.show .dropdown-institutions-content {
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2e8b57;
+            color: white;
+        }
+
+        h2 {
+            color: #2e8b57;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .content img {
+            width: 100%;
+            height: auto;
+            max-height: 300px; /* Define a mesma altura para todas as imagens */
+            object-fit: cover; /* Corta a imagem para se ajustar */
+            margin-bottom: 20px;
+        }
+
+        .bioma-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve para um visual mais profissional */
+        }
+
+        .bioma-section h3 {
+            color: #2e8b57;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .redirect-button {
+            float: left;
+            display: block;
+            color: white;
+            background-color: #4CAF50;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .redirect-button:hover {
+            background-color: #3e8e41;
+        }
+
+        .menbros {
+            font-size: 16px;
+            color: white;
+            padding: 14px 20px;
+            background-color: #4CAF50;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .menbros:hover {
+            background-color: #3e8e41;
+        }
+
+        .amazonia {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Flora Brasileira</h1>
+    </header>
+
+    <nav>
+        <!-- Botão Estados e Seus Biomas -->
+        <div class="dropdown-states">
+            <button class="dropbtn-states" onclick="toggleDropdownStates()">Estados</button>
+            <div class="dropdown-states-content">
+                <a href="#mata-atlantica">Rio de Janeiro</a>
+                <a href="#mata-atlantica">Pará</a>
+                <a href="#amazonia">Acre</a>
+                <a href="#mata-atlantica">São Paulo</a>
+                <a href="#cerrado">Goiás</a>
+                <a href="#caatinga">Bahia</a>
+                <a href="#pampa">Rio Grande do Sul</a>
+                <a href="#pantanal">Mato Grosso</a>
+                <a href="#manguezal">Pará</a>
+            </div>
+        </div>
+
+        <!-- Botão Menu Mais -->
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdownMais()">Biomas</button>
+            <div class="dropdown-content">
+                <a href="cerrado.html">Cerrado Brasileiro</a>
+                <a href="amazonia.html">Amazônia</a>
+                <a href="https://static.preparaenem.com/2023/03/mapa-apontando-a-localizacao-da-floresta-amazonica-na-america-do-sul.jpg"> Mapa da Amazônia</a>
+                <a href="pampa.html">Pampa</a>
+            </div>
+        </div>
+
+        <!-- Botão Instituições -->
+        <div class="dropdown-institutions">
+            <button class="dropbtn-institutions" onclick="toggleDropdownInstitutions()">Instituições</button>
+            <div class="dropdown-institutions-content">
+                <a href="mn.html">IBAMA</a>
+                <a href="http://www4.icmbio.gov.br">ICMBio</a>
+                <a href="https://antigo.mma.gov.br/">Ministério do Meio Ambiente</a>
+            </div>
+        </div>
+
+        <a href="https://sosamazonia.org.br/" class="redirect-button">Como ajudar</a>
+        <a href="membros.html"><button class="menbros">Membros do grupo</button></a>
+    </nav>
+
+    <div class="content">
+        <h2 id="amazonia">Amazônia</h2>
+        <div class="bioma-section">
+            <h3>Descrição</h3>
+            <p>A Amazônia é formada por diversos ecossistemas e é a região com maior biodiversidade do planeta. Além de abrigar grandes reservas minerais e um terço das florestas tropicais úmidas do mundo, a Amazônia é crucial para a regulação do clima global.</p>
+            <img src="imagem/amazonia2.jpg" alt="Imagem da Amazônia">
+        </div>
+
+        <h2 id="mata-atlantica">Mata Atlântica</h2>
+        <div class="bioma-section">
+            <h3>Descrição</h3>
+            <p>A Mata Atlântica corresponde a 15% do território brasileiro, abrigando uma rica diversidade. Atualmente, apenas 7% de sua vegetação original permanece, o que a torna uma das áreas mais ameaçadas do Brasil.</p>
+            <img src="imagem/arvores-da-Mata_Atlantica.webp" alt="Imagem da Mata Atlântica">
+        </div>
+
+        <h2 id="cerrado">Cerrado</h2>
+        <div class="bioma-section">
+            <h3>Descrição</h3>
+            <p>O Cerrado é o segundo maior bioma da América do Sul e abrange cerca de 22% do território brasileiro. Conhecido por suas savanas e planícies, o Cerrado abriga diversas espécies adaptadas às condições de seca e fogo.</p>
+            <img src="imagem/cerrado01.jpg" alt="Imagem do Cerrado">
+        </div>
+        <h2 id="pampa">Pampa</h2>
+        <div class="bioma-section">
+            <h3>Descrição</h3>
+            <p>O Pampa está restrito ao estado do Rio Grande do Sul e é um dos biomas mais antigos do país. Ocupa 63% do território estadual e é caracterizado por vastas áreas de pastagens e vegetação típica das regiões temperadas.</p>
+            <img src="imagem/combinado-pampa-argentina-y-playa.jpg" alt="Imagem do Pampa">
+        </div>
+
+        <h2 id="pantanal">Pantanal</h2>
+        <div class="bioma-section">
+            <h3>Descrição</h3>
+            <p>O Pantanal é uma das maiores extensões úmidas contínuas do planeta, ocupando 1,76% do território brasileiro. É conhecido por sua grande riqueza em fauna e flora, além de ser um importante regulador climático da região.</p>
+            <img src="imagem/pantanal.jpg" alt="Imagem do Pantanal">
+        </div>
+
+        <h2 id="manguezal">Manguezal</h2>
+        <div class="bioma-section">
+            <h3>Descrição</h3>
+            <p>Os manguezais são ecossistemas costeiros que ocorrem em regiões tropicais e subtropicais. São importantes para a reprodução de várias espécies de peixes e outros organismos marinhos.</p>
+            <img src="imagem/manguezal.webp" alt="Imagem do Manguezal">
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Flora Brasileira. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleDropdownMais() {
+            var dropdown = document.querySelector(".dropdown");
+            dropdown.classList.toggle("show");
+        }
+
+        function toggleDropdownStates() {
+            var dropdown = document.querySelector(".dropdown-states");
+            dropdown.classList.toggle("show");
+        }
+
+        function toggleDropdownInstitutions() {
+            var dropdown = document.querySelector(".dropdown-institutions");
+            dropdown.classList.toggle("show");
+        }
+
+        // Fechar dropdowns ao clicar fora deles
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn') && !event.target.matches('.dropbtn-states') && !event.target.matches('.dropbtn-institutions')) {
+                var dropdowns = document.querySelectorAll(".dropdown, .dropdown-states, .dropdown-institutions");
+                dropdowns.forEach(function (dropdown) {
+                    dropdown.classList.remove("show");
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>

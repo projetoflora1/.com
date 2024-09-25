@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Flora do Pampa</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">Explore a Singular Flora do Pampa</h1>
+        <p class="intro-text">
+            O Pampa, localizado principalmente no sul do Brasil, é um bioma único, caracterizado por vastas planícies e campos. Embora seja conhecido por sua aparência de campos abertos, o Pampa possui uma biodiversidade surpreendente. Descubra as maravilhas da flora que se adapta perfeitamente às condições desse bioma.
+        </p>
+
+        <!-- Gramíneas e Campos -->
+        <div class="flora-section">
+            <h2 class="flora-title">As Gramíneas e os Campos do Pampa</h2>
+            <p class="flora-description">
+                As gramíneas são a vegetação predominante no Pampa, criando vastos campos que se estendem até onde a vista alcança. Espécies como a grama-mato-grosso (Axonopus compressus) e a capim-fino (Andropogon lateralis) são exemplos de plantas que dominam a paisagem, criando a característica de "campos abertos".
+            </p>
+            <img src="imagem/combinado-pampa-argentina-y-playa.jpg" alt="Gramíneas do Pampa" class="flora-image">
+        </div>
+
+        <!-- Árvores e Arbustos do Pampa -->
+        <div class="flora-section">
+            <h2 class="flora-title">Árvores e Arbustos do Pampa</h2>
+            <p class="flora-description">
+                Embora o Pampa seja predominantemente composto por campos, pequenas árvores e arbustos também compõem a paisagem, especialmente em áreas de solo mais fértil ou em bordas de rios. Entre as espécies mais comuns estão o espinilho (Vachellia caven) e o butiá (Butia capitata), que crescem de forma espaçada.
+            </p>
+            <img src="imagem/pampa4.jpg" alt="Butiá e Espinilho" class="flora-image">
+        </div>
+
+        <!-- Plantas Medicinais -->
+        <div class="flora-section">
+            <h2 class="flora-title">Plantas Medicinais e Úteis</h2>
+            <p class="flora-description">
+                O Pampa também abriga uma variedade de plantas medicinais utilizadas pelas comunidades rurais. A marcela (Achyrocline satureioides) é conhecida por suas propriedades calmantes, e o carqueja (Baccharis trimera) é utilizado para problemas digestivos e circulatórios.
+            </p>
+            <img src="imagem/pampa3.jpg" alt="Marcela e Carqueja" class="flora-image">
+        </div>
+
+        <!-- Flores Nativas do Pampa -->
+        <div class="flora-section">
+            <h2 class="flora-title">Flores Nativas e Coloridas</h2>
+            <p class="flora-description">
+                Durante a primavera, o Pampa se enche de flores coloridas, como a flor-de-maio (Schizachyrium tenerum) e o cravo-do-campo (Celosia argentea), que proporcionam cor e vida à vasta planície verde. Essas flores não apenas embelezam o bioma, mas também desempenham um papel vital na polinização.
+            </p>
+            <img src="imagem/pampa1.jpg" alt="Flores do Pampa" class="flora-image">
+        </div>
+
+        <!-- Curiosidades sobre a Flora -->
+        <div class="flora-section">
+            <h2 class="flora-title">Curiosidades sobre a Flora do Pampa</h2>
+            <ul class="flora-list">
+                <li>O Pampa é o menor bioma brasileiro, mas é um dos mais ricos em diversidade de gramíneas, com mais de 450 espécies identificadas.</li>
+                <li>A vegetação do Pampa desempenha um papel essencial na criação de gado, que é a principal atividade econômica da região.</li>
+                <li>O butiá, uma das árvores mais icônicas do Pampa, é utilizado na culinária local para a produção de sucos, geleias e até bebidas alcoólicas.</li>
+            </ul>
+            <img src="imagem/pampa.jpg" alt="Curiosidades do Pampa" class="flora-image">
+        </div>
+
+        <!-- Botão de Retorno -->
+        <button class="back-button" onclick="window.history.back()">Voltar</button>
+    </div>
+
+    <!-- Estilos CSS -->
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #2E7D32; /* Verde mais escuro para representar as planícies do Pampa */
+            margin: 0;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .main-title {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 30px;
+        }
+
+        .intro-text {
+            text-align: center;
+            font-size: 1.3em;
+            margin-bottom: 40px;
+        }
+
+        .flora-section {
+            margin-bottom: 50px;
+        }
+
+        .flora-title {
+            color: #FFEB3B; /* Amarelo para destacar os títulos */
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .flora-description, .flora-list {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .flora-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            margin-top: 15px;
+        }
+
+        .back-button {
+            display: block;
+            margin: 30px auto;
+            padding: 15px 30px;
+            background-color: #FF9800; /* Botão laranja vibrante */
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.3em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #F57C00;
+        }
+
+        .flora-list {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .flora-list li {
+            margin-bottom: 10px;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Flora da Amazônia</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">A Fascinante Flora da Amazônia</h1>
+        <p class="intro-text">
+            A Amazônia, conhecida como o "pulmão do mundo", abriga a maior floresta tropical do planeta, com uma biodiversidade inigualável. Este bioma exuberante contém uma vasta gama de espécies vegetais, muitas delas endêmicas, desempenhando um papel fundamental para o equilíbrio ecológico global. Explore abaixo algumas das maravilhas da flora amazônica.
+        </p>
+
+        <!-- Árvores Gigantes -->
+        <div class="flora-section">
+            <h2 class="flora-title">As Árvores Gigantes da Amazônia</h2>
+            <p class="flora-description">
+                A Amazônia é o lar de algumas das maiores árvores do mundo, como a majestosa Samaúma (Ceiba pentandra), que pode atingir até 70 metros de altura. Árvores como o Mogno (Swietenia macrophylla) e o Cedro (Cedrela odorata) também são símbolos da força e grandiosidade da floresta.
+            </p>
+            <img src="imagem/oi.webp" alt="Samaúma - A Rainha da Floresta" class="flora-image">
+        </div>
+
+        <!-- Plantas Medicinais -->
+        <div class="flora-section">
+            <h2 class="flora-title">Plantas Medicinais da Amazônia</h2>
+            <p class="flora-description">
+                A Amazônia é uma farmácia natural. Diversas plantas da floresta são usadas há séculos por comunidades indígenas para tratar doenças e aliviar sintomas. Entre as mais conhecidas estão a Unha-de-Gato (Uncaria tomentosa), o Guaraná (Paullinia cupana) e o Jaborandi (Pilocarpus jaborandi), cujos compostos são amplamente estudados pela ciência moderna.
+            </p>
+            <img src="imagem/medicinal.jpg" alt="Plantas Medicinais da Amazônia" class="flora-image">
+        </div>
+
+        <!-- Flores Exóticas -->
+        <div class="flora-section">
+            <h2 class="flora-title">Flores Exóticas e Coloridas da Amazônia</h2>
+            <p class="flora-description">
+                A Amazônia é um verdadeiro jardim de flores exóticas, como as vibrantes orquídeas e a icônica Vitória-Régia (Victoria amazonica), que pode atingir até 3 metros de diâmetro. Essas flores não são apenas belas, mas também desempenham um papel importante no ecossistema, atraindo polinizadores como abelhas e pássaros.
+            </p>
+            <img src="imagem/capa_vitoria_regia.jpg" alt="Vitória-Régia e Orquídeas" class="flora-image">
+        </div>
+
+        <!-- Importância da Floresta para o Planeta -->
+        <div class="flora-section">
+            <h2 class="flora-title">A Importância da Amazônia para o Clima Global</h2>
+            <p class="flora-description">
+                A vegetação densa da Amazônia atua como uma gigante esponja de carbono, ajudando a regular o clima global. Árvores como a seringueira (Hevea brasiliensis) e o pau-rosa (Aniba rosaeodora) absorvem grandes quantidades de CO2, desempenhando um papel essencial no combate às mudanças climáticas.
+            </p>
+            <img src="imagem/amazonas2.jpg" alt="Impacto Climático da Amazônia" class="flora-image">
+        </div>
+
+        <!-- Curiosidades sobre a Flora -->
+        <div class="flora-section">
+            <h2 class="flora-title">Curiosidades Sobre a Flora da Amazônia</h2>
+            <ul class="flora-list">
+                <li>Mais de 40.000 espécies de plantas já foram identificadas na Amazônia, com muitas ainda desconhecidas pela ciência.</li>
+                <li>A Amazônia possui o maior número de espécies de árvores do mundo, com cerca de 390 bilhões de árvores individuais.</li>
+                <li>A floresta é responsável por 20% do oxigênio da Terra, desempenhando um papel vital na saúde do planeta.</li>
+            </ul>
+            <img src="imagem/floresta-amazonica.png" alt="Curiosidades da Amazônia" class="flora-image">
+        </div>
+
+        <!-- Botão de Retorno -->
+        <button class="back-button" onclick="window.history.back()">Voltar</button>
+    </div>
+
+    <!-- Estilos CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1B5E20; /* Verde escuro para refletir a floresta */
+            margin: 0;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 900px; /* Largura maior */
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.8); /* Fundo mais opaco */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra suave */
+        }
+
+        .main-title {
+            text-align: center;
+            font-size: 3em; /* Título maior */
+            margin-bottom: 30px;
+        }
+
+        .intro-text {
+            text-align: center;
+            font-size: 1.3em; /* Tamanho maior para o texto de introdução */
+            margin-bottom: 40px;
+        }
+
+        .flora-section {
+            margin-bottom: 50px;
+        }
+
+        .flora-title {
+            color: #66BB6A; /* Verde mais claro para contraste */
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .flora-description, .flora-list {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .flora-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra mais intensa nas imagens */
+            margin-top: 15px;
+        }
+
+        .back-button {
+            display: block;
+            margin: 30px auto;
+            padding: 15px 30px;
+            background-color: #FF9800; /* Botão laranja vibrante */
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.3em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #F57C00;
+        }
+
+        .flora-list {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .flora-list li {
+            margin-bottom: 10px;
+        }
+    </style>
+</body>
+</html>

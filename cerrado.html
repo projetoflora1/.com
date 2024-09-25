@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Flora do Cerrado</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">Descubra a Riqueza da Flora do Cerrado</h1>
+        <p class="intro-text">
+            O Cerrado, conhecido como a savana brasileira, é o segundo maior bioma da América do Sul e abriga uma rica biodiversidade. Suas plantas são adaptadas a condições climáticas extremas, com longos períodos de seca. Conheça as maravilhas desse bioma único e sua flora resistente e diversificada.
+        </p>
+
+        <!-- Árvores Típicas -->
+        <div class="flora-section">
+            <h2 class="flora-title">Árvores Típicas do Cerrado</h2>
+            <p class="flora-description">
+                O Cerrado é caracterizado por suas árvores de troncos retorcidos e casca grossa, como o Ipê Amarelo (Handroanthus serratifolius) e o Pau-terra (Qualea parviflora). Essas árvores possuem adaptações para resistir ao fogo e à seca prolongada, elementos comuns no bioma.
+            </p>
+            <img src="imagem/cerrado3.jpg" alt="Ipê Amarelo no Cerrado" class="flora-image">
+        </div>
+
+        <!-- Plantas Medicinais -->
+        <div class="flora-section">
+            <h2 class="flora-title">Plantas Medicinais do Cerrado</h2>
+            <p class="flora-description">
+                Muitas espécies de plantas do Cerrado são usadas tradicionalmente para fins medicinais. Entre as mais conhecidas estão o Barbatimão (Stryphnodendron adstringens), usado para curar feridas, e a Aroeira (Schinus terebinthifolius), que possui propriedades anti-inflamatórias.
+            </p>
+            <img src="imagem/c1.jpg" alt="Barbatimão e Aroeira" class="flora-image">
+        </div>
+
+        <!-- Flores Coloridas -->
+        <div class="flora-section">
+            <h2 class="flora-title">Flores Coloridas e Exóticas</h2>
+            <p class="flora-description">
+                O Cerrado é um dos biomas com maior diversidade de flores, especialmente durante a estação das chuvas. Orquídeas, bromélias e espécies como a Paepalanthus (sempre-viva) e o pequi (Caryocar brasiliense) colorem a paisagem, encantando tanto pela beleza quanto pela utilidade para a fauna local.
+            </p>
+            <img src="imagem/c2.jpg" alt="Sempre-viva e Pequi" class="flora-image">
+        </div>
+
+        <!-- Adaptabilidade das Plantas -->
+        <div class="flora-section">
+            <h2 class="flora-title">Adaptações das Plantas do Cerrado</h2>
+            <p class="flora-description">
+                A vegetação do Cerrado desenvolveu adaptações extraordinárias para sobreviver em um ambiente onde o fogo é comum. Algumas plantas possuem casca espessa para resistir às chamas, enquanto outras têm raízes profundas que alcançam lençóis freáticos, garantindo a sobrevivência durante a seca.
+            </p>
+            <img src="imagem/c3.jpg" alt="Plantas Adaptadas ao Fogo" class="flora-image">
+        </div>
+
+        <!-- Curiosidades sobre a Flora -->
+        <div class="flora-section">
+            <h2 class="flora-title">Curiosidades Sobre a Flora do Cerrado</h2>
+            <ul class="flora-list">
+                <li>O Cerrado abriga mais de 12.000 espécies de plantas, sendo que cerca de 4.400 são exclusivas do bioma.</li>
+                <li>As flores do Cerrado atraem uma grande diversidade de polinizadores, como abelhas nativas e beija-flores.</li>
+                <li>Apesar de suas condições extremas, o Cerrado é considerado um dos biomas mais produtivos do ponto de vista ecológico.</li>
+            </ul>
+            <img src="imagem/c4.jpg" alt="Curiosidades da Flora do Cerrado" class="flora-image">
+        </div>
+
+        <!-- Botão de Retorno -->
+        <button class="back-button" onclick="window.history.back()">Voltar</button>
+    </div>
+
+    <!-- Estilos CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #8BC34A; /* Cor verde clara para simbolizar a vegetação do Cerrado */
+            margin: 0;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 900px; /* Largura maior */
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.8); /* Fundo mais opaco */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra suave */
+        }
+
+        .main-title {
+            text-align: center;
+            font-size: 3em; /* Título maior */
+            margin-bottom: 30px;
+        }
+
+        .intro-text {
+            text-align: center;
+            font-size: 1.3em; /* Tamanho maior para o texto de introdução */
+            margin-bottom: 40px;
+        }
+
+        .flora-section {
+            margin-bottom: 50px;
+        }
+
+        .flora-title {
+            color: #FFEB3B; /* Amarelo vibrante para contraste */
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .flora-description, .flora-list {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .flora-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra mais intensa nas imagens */
+            margin-top: 15px;
+        }
+
+        .back-button {
+            display: block;
+            margin: 30px auto;
+            padding: 15px 30px;
+            background-color: #FF9800; /* Botão laranja vibrante */
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.3em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #F57C00;
+        }
+
+        .flora-list {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .flora-list li {
+            margin-bottom: 10px;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>IBAMA - Protegendo o Meio Ambiente</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #2E7D32; /* Verde representando a natureza e sustentabilidade */
+            margin: 0;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.75); /* Fundo semi-transparente */
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .main-title {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 30px;
+            color: #FFEB3B; /* Amarelo vibrante para destacar o título */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .intro-text {
+            text-align: center;
+            font-size: 1.4em;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .ibama-section {
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .ibama-title {
+            color: #FFEB3B; /* Amarelo para destacar os títulos */
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+
+        .ibama-description, .ibama-list {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .ibama-image {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            margin-top: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .ibama-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+        }
+
+        .back-button {
+            display: block;
+            margin: 30px auto;
+            padding: 15px 30px;
+            background-color: #FF9800; /* Botão laranja vibrante */
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.3em;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #F57C00;
+            transform: translateY(-3px);
+        }
+
+        .ibama-list {
+            list-style: disc;
+            padding-left: 20px;
+            margin-top: 15px;
+        }
+
+        .ibama-list li {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2.2em;
+            }
+
+            .intro-text, .ibama-description {
+                font-size: 1.1em;
+            }
+
+            .ibama-title {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">Conheça o IBAMA: Guardião do Meio Ambiente</h1>
+        <p class="intro-text">
+            O Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis (IBAMA) é a principal entidade federal responsável pela execução de políticas ambientais no Brasil. Sua missão é garantir a proteção do meio ambiente e o uso sustentável dos recursos naturais.
+        </p>
+
+        <!-- O que é o IBAMA -->
+        <div class="ibama-section">
+            <h2 class="ibama-title">O que é o IBAMA?</h2>
+            <p class="ibama-description">
+                Fundado em 1989, o IBAMA atua na fiscalização, preservação e monitoramento ambiental em todo o território nacional. Além de proteger a fauna e flora, o instituto também age contra crimes ambientais, como desmatamento ilegal e tráfico de animais.
+            </p>
+            <img src="imagem/ibama1.jpg" alt="Sede do IBAMA" class="ibama-image">
+        </div>
+
+        <!-- Atribuições e Responsabilidades -->
+        <div class="ibama-section">
+            <h2 class="ibama-title">Principais Atribuições</h2>
+            <p class="ibama-description">
+                O IBAMA é responsável por uma ampla gama de atividades relacionadas à proteção ambiental. Entre suas funções estão:
+            </p>
+            <ul class="ibama-list">
+                <li>Fiscalizar e autuar crimes ambientais, como desmatamento e queimadas ilegais.</li>
+                <li>Licenciamento ambiental para grandes obras, garantindo que impactos ambientais sejam minimizados.</li>
+                <li>Monitoramento e controle da poluição e da exploração de recursos naturais.</li>
+                <li>Preservação e recuperação de áreas degradadas e unidades de conservação.</li>
+                <li>Educação ambiental e conscientização da sociedade sobre a importância da preservação do meio ambiente.</li>
+            </ul>
+          
+        </div>
+
+        <!-- Atuação no Combate ao Desmatamento -->
+        <div class="ibama-section">
+            <h2 class="ibama-title">Combate ao Desmatamento</h2>
+            <p class="ibama-description">
+                Um dos grandes desafios do IBAMA é o combate ao desmatamento, especialmente na Amazônia. O órgão realiza operações constantes para fiscalizar áreas de risco e coibir práticas ilegais de derrubada de árvores e queimadas. 
+            </p>
+            <img src="imagem/ibama2.jpg" alt="Combate ao Desmatamento" class="ibama-image">
+        </div>
+
+        <!-- Fiscalização e Autuação de Crimes Ambientais -->
+        <div class="ibama-section">
+            <h2 class="ibama-title">Fiscalização de Crimes Ambientais</h2>
+            <p class="ibama-description">
+                O IBAMA está na linha de frente na proteção de áreas sensíveis, como a Floresta Amazônica e o Pantanal, e atua na prevenção e punição de crimes como o tráfico de animais silvestres e a extração ilegal de madeira. Suas ações são fundamentais para preservar a biodiversidade do Brasil.
+            </p>
+           
+        </div>
+
+        <!-- Curiosidades sobre o IBAMA -->
+        <div class="ibama-section">
+            <h2 class="ibama-title">Curiosidades sobre o IBAMA</h2>
+            <ul class="ibama-list">
+                <li>O IBAMA possui o poder de aplicar multas milionárias a empresas ou indivíduos que cometam crimes ambientais.</li>
+                <li>Além da fiscalização terrestre, o IBAMA também realiza operações aéreas e marítimas para proteger a biodiversidade em áreas remotas.</li>
+                <li>A instituição é uma das mais importantes no combate ao tráfico de animais silvestres no Brasil.</li>
+                <li>O IBAMA participa de programas de recuperação de espécies ameaçadas de extinção.</li>
+            </ul>
+            <img src="imagem/Operacao_Hymenaea_Julho-2016_29399456261-scaled.jpg" alt="Operações do IBAMA" class="ibama-image">
+        </div>
+
+        <!-- Botão de Retorno -->
+        <button class="back-button" onclick="window.history.back()">Voltar</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membros da Equipe</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #2C3E50;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.4em;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+
+        main {
+            padding: 40px 20px;
+        }
+
+        .membros {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .membro {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding-bottom: 20px;
+        }
+
+        .membro:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .membro img {
+            width: 100%;
+            height: 410px; /* Aumentado o tamanho das imagens */
+            object-fit: cover;
+        }
+
+        .membro h2 {
+            font-size: 1.8em;
+            margin: 20px 0 10px;
+            font-weight: 500;
+            color: #2C3E50;
+        }
+
+        .membro p {
+            padding: 0 20px;
+            font-size: 1.1em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .membro p strong {
+            color: #2C3E50;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2C3E50;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 1.1em;
+            color: #fff;
+            background-color: #2980B9;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            margin-bottom: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #1f5f8a;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Membros da Equipe</h1>
+        <p>Conheça as pessoas que fazem a diferença em nosso time!</p>
+    </header>
+
+    <main>
+        <a href="index.html" class="back-button">Voltar</a> <!-- Botão de voltar -->
+
+        <section class="membros">
+            <article class="membro">
+                <img src="imagem/Luizão.jfif" alt="Luiz Felipe">
+                <h2>Luiz Felipe</h2>
+                <p><strong>Especialista em Marketing Digital</strong><br> Luiz Felipe é responsável pela estratégia de crescimento digital e pelo desenvolvimento de grande parte deste projeto.<br> <strong>@luizfsp1</strong></p>
+            </article>
+
+            <article class="membro">
+                <img src="imagem/Moreira.jfif" alt="João Pedro">
+                <h2>João Pedro</h2>
+                <p><strong>Desenvolvedor de Ideias</strong><br> João Pedro sempre traz soluções criativas e inovadoras para o time, elevando o trabalho a novos patamares.<br> <strong>@07_moreirazn</strong></p>
+            </article>
+
+            <article class="membro">
+                <img src="imagem/Carlão.jfif" alt="Carlos André">
+                <h2>Carlos André</h2>
+                <p><strong>Designer Gráfico</strong><br> Carlos transforma ideias em visuais impactantes, criando a identidade visual que nos diferencia no mercado.<br> <strong>@carloxs_</strong></p>
+            </article>
+
+            <article class="membro">
+                <img src="imagem/fer.jpg" alt="Luís Fernando">
+                <h2>Luís Fernando</h2>
+                <p><strong>Analista de Dados</strong><br> Luís utiliza seus conhecimentos para analisar e transformar informações valiosas, ajudando a melhorar a eficiência dos nossos projetos.</p>
+            </article>
+
+            <article class="membro">
+                <img src="imagem/luizgg.jpg" alt="Luiz Gabriel">
+                <h2>Luiz Gabriel</h2>
+                <p><strong>Surpreendente Membro</strong><br> Distraído e brincalhão, mas quando ele fica sério ninguém consegue pará-lo
+                    Luiz Gabriel de Oliveira Garcia.<br> <strong>@luizbielog</strong></p>
+            </article>
+
+            <article class="membro">
+                <img src="imagem/wesley.jpg" alt="Wesley de Sousa">
+                <h2>Wesley de Sousa</h2>
+                <p><strong>Especialista em Resolução de Problemas</strong><br> Wesley é aquele que resolve os desafios com um sorriso no rosto e está sempre pronto para ajudar.</p>
+            </article>
+
+            <article class="membro">
+                <img src="imagem/yuri.jpg" alt="Yuri Dias">
+                <h2>Yuri Dias</h2>
+                <p><strong>Apresentador</strong><br> Conhecido pela sua habilidade em cativar o público, Yuri brilha nas apresentações.<br> <strong>@yuri_diazz</strong></p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Turma 1113 - Representando novamente :)</p>
+    </footer>
+</body>
+</html>
